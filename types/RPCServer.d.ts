@@ -8,9 +8,10 @@ export interface IMessage {
 export default class RPCServer {
     static handlers: IHandler;
     static isListener: boolean;
-    static onMessage(event: any): Promise<void>;
+    static onMessage(event: any): Promise<any>;
     static export(handlers: IHandler): typeof RPCServer;
     static addHandlers(handlers: IHandler): void;
     static addHandler(key: string, value: (...args: any) => any): void;
     static listen(): void;
+    static unListen(): void;
 }

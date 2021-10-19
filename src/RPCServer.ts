@@ -10,7 +10,7 @@ export interface IMessage {
 export default class RPCServer {
   static handlers: IHandler = {}
   static isListener = false
-  static async onMessage(event: any) {
+  static async onMessage(event: any){
     const {
       data: message = {},
       origin,
@@ -29,17 +29,17 @@ export default class RPCServer {
       status: 'reject',
       data: `${method}方法不存在`
     }
-    if (method in handlers) {
-      try {
+    try {
+      if (method in handlers) {
         const result = await handlers[method](...params)
         rtnMessage.status = 'resolve'
         rtnMessage.data = result
-      } catch (e) {
-        rtnMessage.status = 'reject'
-        rtnMessage.data = String(e)
-      }
-    } 
-    source.postMessage({
+      } 
+    } catch(e) {
+      rtnMessage.status = 'reject'
+      rtnMessage.data = String(e)
+    }
+    return source.postMessage({
       type: SERVER_TYPE,
       id,
       ...rtnMessage
@@ -63,5 +63,9 @@ export default class RPCServer {
       window.addEventListener('message', RPCServer.onMessage, false)
       RPCServer.isListener = true
     }
+  }
+  static unListen() {
+    window.removeEventListener('message', RPCServer.onMessage, false)
+    RPCServer.isListener = false
   }
 }

@@ -1,5 +1,5 @@
 {
-	"name": "xyt-json-rpc",
+	"name": "@js-next/json-rpc",
 	"version": "1.0.0",
 	"description": "前端json-rpc",
 	"main": "dist/index.js",
@@ -12,9 +12,10 @@
 	"files": [
 		"dist",
 		"src",
-		"types"
+		"types",
+		"examples"
 	],
-	"author": "ibogood@126.com(陈波)",
+	"author": "19040733(陈波)",
 	"license": "ISC",
 	"devDependencies": {
 		"ts-loader": "8.0.11",

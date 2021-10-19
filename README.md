@@ -1,6 +1,6 @@
 ## 安装扩展
 ```shell
-npm install -S xyt-json-rpc
+npm install -S @js-next/json-rpc
 ```
 
 ## 使用
@@ -18,7 +18,7 @@ npm install -S xyt-json-rpc
     <iframe id="iframe" src="yourpath/client.html?method=client" width="800" height="600"></iframe>
     <script>
       // 事例代码  真实代码请放对应server.js
-      import { RPCServer } from 'xyt-json-rpc'
+      import { RPCServer } from '@js-next/json-rpc'
       RPCServer.export({ // 添加函数，可以提交已有函数
         foo(id: number){
           console.log('foo call', id)
@@ -42,7 +42,7 @@ npm install -S xyt-json-rpc
   <body>
     client
     <script>
-      import { RPCClient } from 'xyt-json-rpc'
+      import { RPCClient } from '@js-next/json-rpc'
       const rpcClient = new RPCClient(parent) as any
       const r1 = await rpcClient.foo(1)
       console.log(r1)
