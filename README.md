@@ -42,6 +42,7 @@ npm install -S @js-next/json-rpc
   <body>
     client
     <script>
+      // 事例代码  真实代码请放对应client.js
       import { RPCClient } from '@js-next/json-rpc'
       const rpcClient = new RPCClient(parent) as any
       const r1 = await rpcClient.foo(1)
