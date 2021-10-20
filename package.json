@@ -1,6 +1,6 @@
 {
 	"name": "@js-next/json-rpc",
-	"version": "1.0.4",
+	"version": "1.1.0",
 	"description": "前端json-rpc",
 	"main": "dist/index.js",
 	"typings": "types/index.d.ts",
