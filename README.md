@@ -1,6 +1,6 @@
 ## 使用
 
-具体查看DEMO [点击预览](https://unpkg.com/@js-next/json-rpc@1.1.1/demo/server.html)
+具体查看DEMO [点击预览](https://unpkg.com/@js-next/json-rpc@1.1.3/demo/server.html)
 ### 原生方案
 ```html
 <!-- 注意： 不要在files:// 打开 建议在localhost:// 打开 -->
@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf8" />
     <title>server</title>
-    <script src="https://unpkg.com/@js-next/json-rpc@1.1.1/dist/json-rpc.umd.min.js"></script>
+    <script src="https://unpkg.com/@js-next/json-rpc@1.1.3/dist/json-rpc.umd.min.js"></script>
   </head>
   <body>
     server： 打印请看控制台
@@ -36,7 +36,7 @@
   <head>
     <meta charset="utf8" />
     <title>client</title>
-    <script src="https://unpkg.com/@js-next/json-rpc@1.1.1/dist/json-rpc.umd.min.js"></script>
+    <script src="https://unpkg.com/@js-next/json-rpc@1.1.3/dist/json-rpc.umd.min.js"></script>
   </head>
   <body>
     client： 打印请看控制台
@@ -54,7 +54,7 @@
 </html>
 
 ```
-具体查看DEMO [点击预览](https://unpkg.com/@js-next/json-rpc@1.1.1/demo/server.html)
+具体查看DEMO [点击预览](https://unpkg.com/@js-next/json-rpc@1.1.3/demo/server.html)
 
 ### npm方式
 #### 安装扩展
