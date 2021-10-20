@@ -6,7 +6,7 @@ module.exports = {
     output: {
         filename: 'umd.min.js',
         path: path.resolve(__dirname, '../dist'),
-        library: 'iframe-json-rpc',
+        library: 'jsonRPC',
         libraryTarget: 'umd'
     }
 }
