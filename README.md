@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf8" />
     <title>server</title>
-    <script src="https://unpkg.com/@js-next/json-rpc@1.0.2/dist/umd.min.js"></script>
+    <script src="https://unpkg.com/@js-next/json-rpc@1.0.4/dist/json-rpc.umd.min.js"></script>
   </head>
   <body>
     server
@@ -34,7 +34,7 @@
   <head>
     <meta charset="utf8" />
     <title>client</title>
-    <script src="https://unpkg.com/@js-next/json-rpc@1.0.2/dist/umd.min.js"></script>
+    <script src="https://unpkg.com/@js-next/json-rpc@1.0.4/dist/json-rpc.umd.min.js"></script>
   </head>
   <body>
     client

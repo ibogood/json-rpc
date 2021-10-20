@@ -4,7 +4,7 @@ module.exports = {
     ...baseConfig,
     mode: 'production',
     output: {
-        filename: 'umd.min.js',
+        filename: 'json-rpc.umd.min.js',
         path: path.resolve(__dirname, '../dist'),
         library: 'jsonRPC',
         libraryTarget: 'umd'
