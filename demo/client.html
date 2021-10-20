@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>client</title>
+    <!-- <script src="https://unpkg.com/@js-next/json-rpc@1.1.1/dist/json-rpc.umd.min.js"></script> -->
+    <script src="../dist/json-rpc.umd.min.js"></script>
+  </head>
+  <body>
+    client  打印请看控制台
+    <script>
+      (async () => {
+        const { RPCClient }  = window.jsonRPC
+        const rpcClient = new RPCClient(parent)
+        const r1 = await rpcClient.foo(1)
+        console.log(r1)
+        const r2 = await rpcClient.bar('xxx', 'yyy')
+        console.log(r2)
+      })()
+    </script>
+  </body>
+</html>

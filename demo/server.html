@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>server</title>
+    <!-- <script src="https://unpkg.com/@js-next/json-rpc@1.1.0/dist/json-rpc.umd.min.js"></script> -->
+    <script src="../dist/json-rpc.umd.min.js"></script>
+  </head>
+  <body>
+    server： 打印请看控制台
+    <iframe id="iframe" src="./client.html" width="800" height="600"></iframe>
+    <script>
+      const { RPCServer } = window.jsonRPC
+      RPCServer.export({ // 添加函数，可以提交已有函数
+        foo(id){
+          console.log('foo call', id)
+          return id + 2
+        },
+        bar(name, id) {
+          console.log('bar call', name, id)
+          return name + id + 'bar call'
+        }
+      }).listen()
+    </script>
+  </body>
+</html>
