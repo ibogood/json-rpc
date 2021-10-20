@@ -1,12 +1,14 @@
 {
 	"name": "@js-next/json-rpc",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "前端json-rpc",
 	"main": "dist/index.js",
 	"typings": "types/index.d.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "webpack --config ./build/webpack.prod.js",
+		"build": "npm run build:common && npm run build:umd",
+		"build:common": "webpack --config ./build/webpack.prod.js",
+		"build:umd": "webpack --config ./build/webpack.prod.umd.js",
 		"dev": "webpack-dev-server --open --config ./build/webpack.dev.js"
 	},
 	"files": [
